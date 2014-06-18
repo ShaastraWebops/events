@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import httplib2
 import pprint
 
@@ -7,8 +9,8 @@ from oauth2client.client import OAuth2WebServerFlow
 
 
 # Copy your credentials from the console
-CLIENT_ID = 'YOUR_CLIENT_ID'
-CLIENT_SECRET = 'YOUR_CLIENT_SECRET'
+CLIENT_ID = 'CLIENT_ID'
+CLIENT_SECRET = 'CLIENT_SECERET'
 
 # Check https://developers.google.com/drive/scopes for all available scopes
 OAUTH_SCOPE = 'https://www.googleapis.com/auth/drive'
