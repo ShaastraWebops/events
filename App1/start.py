@@ -5,7 +5,6 @@ import os
 
 
 gauth = GoogleAuth()
-gauth.CommandLineAuth()
 gauth.LocalWebserverAuth()
 
 drive = GoogleDrive(gauth)
