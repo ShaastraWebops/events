@@ -1,7 +1,7 @@
 import Tkinter as tk
 import time
 import os
-import comm_1
+import comm
 # import requests
 
 # requests.get('https://github.com',verify=True)
@@ -18,10 +18,9 @@ p1.geometry(("%dx%d+%d+%d")%(SCR_SIZE[0],SCR_SIZE[1],(RWidth-SCR_SIZE[0])/2,(RHe
 p1.resizable(0,0)
 
 def but1_callback():		
-	t=time.time()
-	comm_1.main()
-	print time.time()-t
-	#os.system('python start.py')
+	#t=time.time()
+	comm.main()
+	#print time.time()-t	
 	p1.destroy()
 
 but1=tk.Button(p1, text='Login', command=but1_callback)

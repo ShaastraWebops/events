@@ -11,7 +11,7 @@ def list_all_files(parent_id, trashed=False):
 	return file_list
 
 
-def complete_online_file_list(parent_id):		
+def complete_file_list(parent_id):		
 
 	global total_file_list
 	file_list=list_all_files(parent_id)
@@ -32,14 +32,15 @@ def main():
 	gauth.LocalWebserverAuth()
 	drive = GoogleDrive(gauth)
 
-	complete_online_file_list('root')	
+	#complete_file_list('root')	
+	total_file_list=drive.ListFile().GetList();
 
-	print len(total_file_list)	
+	#print len(total_file_list)	
 
-	for file1 in total_file_list:
-	  print 'title: ', (file1['title'])	
+	# for file1 in total_file_list:
+	#   print 'title: ', (file1['title'])	
 	
-	# f=open('total_file_list_new.json','w+')
+	# f=open('total_file_list.json','w+')
 	# json.dump(total_file_list,f)
 	# f.close()
 

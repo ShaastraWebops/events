@@ -1,7 +1,8 @@
 import os
 import time
 #import gui_p1
-import gui_p2
+#import gui_p2
+import browse
 # import requests
 
 t=time.time()
@@ -14,8 +15,9 @@ os.putenv('https_proxy','https://na12b028:-tx5Y$4P@hproxy.iitm.ac.in:3128/')
 
 # requests.get('https://github.com',verify=True)
 
-os.system('python gui_p1.py')
+#os.system('python gui_p1.py')
+browse.main()
 print time.time()-t
-#gui_p1.main()
-#gui_p2.main()
+
+
 
