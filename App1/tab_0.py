@@ -1,6 +1,5 @@
 import Tkinter as tk
 import constants as cns
-from encoder_beta3 import encoder
 
 class ribbon:
 	
