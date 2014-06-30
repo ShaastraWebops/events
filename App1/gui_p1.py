@@ -1,7 +1,7 @@
 import Tkinter as tk
 import time
 import os
-import comm
+import online
 # import requests
 
 # requests.get('https://github.com',verify=True)
@@ -19,7 +19,7 @@ p1.resizable(0,0)
 
 def but1_callback():		
 	#t=time.time()
-	comm.main()
+	online.main()
 	#print time.time()-t	
 	p1.destroy()
 

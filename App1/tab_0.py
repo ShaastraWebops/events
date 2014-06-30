@@ -24,10 +24,10 @@ class ribbon:
 		self.but1=tk.Button(self.frame, text=fileob['title'], bg=self.frame.cget('bg'), bd=1,
 						fg=cns.var_tab0_clr['FG'], cursor='hand2', relief=tk.FLAT,
 						anchor=tk.W, justify=tk.LEFT, font=cns.var_font['RIBBON_BUT'],
-						width=int(self.frame.cget('width')*0.3), height=thickness,
+						width=int(self.frame.cget('width')*0.3), height=int(0.8*thickness),
 						command=self.but1_callback)		
 		self.but1.pack()
-		self.but1.place(x=30, y=0, width=self.but1.cget('width'), height=thickness)
+		self.but1.place(x=30, y=int(0.1*thickness), width=self.but1.cget('width'), height=self.but1.cget('height'))
 
 		self.but2=tk.Button(self.frame, text='trial')
 		self.but2.pack(side=tk.RIGHT)
