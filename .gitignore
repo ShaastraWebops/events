@@ -54,5 +54,6 @@ docs/_build/
 
 # Custom files
 client_secret.json
+credentials.json
 settings.py
 venv
